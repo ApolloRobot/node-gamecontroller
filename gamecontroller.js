@@ -21,10 +21,10 @@ const Vendors = require('./lib/vendors.js');
 
 const util = require('util');
 
-function GameController(type) {
+function ApolloController(type) {
 
-  if (!(this instanceof GameController)) {
-    return new GameController(type);
+  if (!(this instanceof ApolloController)) {
+    return new ApolloController(type);
   }
 
   this._vendor = Vendors[type];
@@ -33,7 +33,7 @@ function GameController(type) {
   process.on('exit', this.close.bind(this));
 }
 
-GameController.prototype = {
+ApolloController.prototype = {
   _hid: null,
   _vendor: null,
   connect: function(cb) {
@@ -110,7 +110,7 @@ GameController.prototype = {
   }
 };
 
-GameController.getDevices = function() {
+ApolloController.getDevices = function() {
   let dev = HID.devices();
   let ret = [];
 
@@ -127,6 +127,6 @@ GameController.getDevices = function() {
 };
 
 
-module.exports = GameController;
+module.exports = ApolloController;
 
-util.inherits(GameController, EventEmitter);
+util.inherits(ApolloController, EventEmitter);

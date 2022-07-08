@@ -14,7 +14,7 @@ Installation
 Installing node-gamecontroller is as easy as cloning this repo or use npmjs:
 
 ```bash
-npm install gamecontroller
+npm install apollocontroller
 ```
 
 Usage
@@ -23,8 +23,8 @@ Usage
 Plug in your game controller and run the following code:
 
 ```js
-const Gamecontroller = require('gamecontroller');
-const ctrl = new Gamecontroller('ps2');
+const Apollocontroller = require('apollocontroller');
+const ctrl = new Apollocontroller('ps2');
 
 ctrl.connect(function() {
     console.log('Game On!');
@@ -91,9 +91,9 @@ At the moment, the following controllers are supported:
 If you've connected a supported controller, you can run the following to find the name of it:
 
 ```js
-var Gamecontroller = require('gamecontroller');
+var Apollocontroller = require('apollocontroller');
 
-var dev = Gamecontroller.getDevices();
+var dev = Apollocontroller.getDevices();
 
 console.log(dev);
 ```
@@ -120,4 +120,5 @@ hid.on("data", function(data) {
 Copyright and licensing
 ===
 Copyright (c) 2017, [Robert Eisele](https://www.xarg.org/)
+modified vy apollorobot (https://apollo.mnoiot.com/)
 Dual licensed under the MIT or GPL Version 2 licenses.

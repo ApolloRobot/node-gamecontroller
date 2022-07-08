@@ -1,8 +1,8 @@
 {
-    "name": "gamecontroller",
-    "homepage": "https://github.com/infusion/node-gamecontroller",
-    "bugs": "https://github.com/infusion/node-gamecontroller/issues",
-    "title": "gamecontroller",
+    "name": "apollocontroller",
+    "homepage": "https://github.com/ApolloRobot/node-gamecontroller",
+    "bugs": "https://github.com/ApolloRobot/node-gamecontroller/issues",
+    "title": "apollocontroller",
     "version": "0.0.2",
     "description": "A node driver for several gamecontroller",
     "keywords": [
@@ -16,9 +16,18 @@
         "controller",
         "joystick",
         "robotics",
-        "robot"
+        "robot",
+        "apollo",
+        "apollorobot",
+        "ps2",
+        "ps3",
+        "xbox",
+        "snes-tomee",
+        "snes-retrolink",
+        "raspberry",
+        "pi"
     ],
-    "author": "Robert Eisele <robert@xarg.org> (http://www.xarg.org/)",
+    "author": "Robert Eisele <robert@xarg.org> (http://www.xarg.org/) modified by apollorobot(https://apollo.mnoiot.com/)",
     "main": "gamecontroller.js",
     "private": false,
     "directories": {
@@ -28,7 +37,7 @@
     "license": "MIT OR GPL-2.0",
     "repository": {
         "type": "git",
-        "url": "git://github.com/infusion/node-gamecontroller.git"
+        "url": "git@github.com:ApolloRobot/node-gamecontroller.git"
     },
     "engines": {
         "node": "*"

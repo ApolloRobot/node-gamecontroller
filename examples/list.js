@@ -1,6 +1,6 @@
 
-var GameController = require('../gamecontroller.js');
+var ApolloController = require('../gamecontroller.js');
 
-var dev = GameController.getDevices();
+var dev = ApolloController.getDevices();
 
 console.log(dev);
