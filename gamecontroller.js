@@ -3,6 +3,9 @@
  *
  * Copyright (c) 2017, Robert Eisele (robert@xarg.org)
  * Dual licensed under the MIT or GPL Version 2 licenses.
+ * modified by apollorobot 
+ * 2022-7-8
+ * b10050113@gmail.com
  **/
 
 /*
@@ -63,10 +66,16 @@ GameController.prototype = {
         if (sp[0] === 'axis') {
 
           let Ykey = sp[0] + ':' + sp[1] + ':Y';
-
+          let Xkey = sp[0] + ':' + sp[1] + ':X';
           if (sp[2] === 'X' && (ns !== os || newState[Ykey] !== oldState[Ykey])) {
             pass.x = ns;
             pass.y = newState[Ykey];
+            self.emit(sp[1] + ':move', pass);
+          }
+
+          if (sp[2] === 'Y' && (ns !== os || newState[Xkey] !== oldState[Xkey])) {
+            pass.x = newState[Xkey];
+            pass.y = ns;
             self.emit(sp[1] + ':move', pass);
           }
         } else if (os !== ns) {
@@ -91,7 +100,7 @@ GameController.prototype = {
   },
   close: function() {
     if (this._hid) {
-      this._hid.close();
+      this._hid.disconnect();
       this._hid = null;
     }
 
