@@ -120,5 +120,5 @@ hid.on("data", function(data) {
 Copyright and licensing
 ===
 Copyright (c) 2017, [Robert Eisele](https://www.xarg.org/)
-modified vy apollorobot (https://apollo.mnoiot.com/)
+modified  [apollorobot] (https://apollo.mnoiot.com/)
 Dual licensed under the MIT or GPL Version 2 licenses.
