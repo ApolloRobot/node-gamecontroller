@@ -3,7 +3,7 @@
     "homepage": "https://github.com/ApolloRobot/node-gamecontroller",
     "bugs": "https://github.com/ApolloRobot/node-gamecontroller/issues",
     "title": "apollocontroller",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "A node driver for several gamecontroller",
     "keywords": [
         "gamepad",
