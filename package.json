@@ -3,7 +3,7 @@
     "homepage": "https://github.com/ApolloRobot/node-gamecontroller",
     "bugs": "https://github.com/ApolloRobot/node-gamecontroller/issues",
     "title": "apollocontroller",
-    "version": "0.0.4",
+    "version": "0.0.6",
     "description": "A node driver for several gamecontroller",
     "keywords": [
         "gamepad",
@@ -21,6 +21,8 @@
         "apollorobot",
         "ps2",
         "ps3",
+        "ps4",
+        "ble",
         "xbox",
         "snes-tomee",
         "snes-retrolink",
